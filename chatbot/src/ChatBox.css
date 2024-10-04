@@ -1,0 +1,100 @@
+.chatbox {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #343541;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message styling */
+.message {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 75%;
+  line-height: 1.5;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #10a37f;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+}
+
+.bot {
+  background-color: #444654;
+  margin-right: auto;
+  border-bottom-left-radius: 0;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #a0a0a0;
+  text-align: right;
+}
+
+.typing-indicator {
+  margin-left: auto;
+  font-style: italic;
+  color: #a0a0a0;
+}
+
+/* Responsive styles */
+
+/* For mobile phones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .chatbox {
+    padding: 10px;
+  }
+  .message {
+    padding: 10px;
+    font-size: 0.6rem;
+  }
+  .timestamp {
+    font-size: 10px;
+  }
+}
+
+/* For tablets (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .chatbox {
+    padding: 15px;
+  }
+  .message {
+    padding: 12px;
+    font-size: 0.6rem;
+  }
+  .timestamp {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .chatbox {
+    padding: 15px;
+  }
+  .message {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .timestamp {
+    font-size: 11px;
+  }
+}
+
+/* For smaller screens (max-width: 320px) */
+@media only screen and (max-width: 320px) {
+  .chatbox {
+    padding: 5px;
+  }
+  .message {
+    padding: 8px;
+    font-size: 0.7rem;
+  }
+  .timestamp {
+    font-size: 9px;
+  }
+}

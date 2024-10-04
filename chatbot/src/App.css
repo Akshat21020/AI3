@@ -1,0 +1,66 @@
+.chat-app {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+  max-width: 800px;
+  margin-top: 3vh;
+  margin-left: 50vh;
+  background-color: #343541;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* For mobile phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .chat-app {
+    height: 100vh;
+    max-width: 80%;
+    margin-left: 10vh;
+    margin-right: 0px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .chat-app {
+    height: 100vh;
+    max-width: 90%;
+    margin-left: 5vh;
+    margin-right: 0px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .chat-app {
+    height: 100vh;
+    max-width: 85%;
+    margin-left: 25vh;
+    margin-right: 100px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+
+/* For tablets and small laptops (max-width: 1024px) */
+@media (max-width: 1200px) {
+  .chat-app {
+    max-width: 90%;
+    margin-left: 40vh;
+    margin-right: 150px;
+  }
+}
+
+/* For larger laptops (min-width: 1280px) */
+@media (min-width: 1280px) {
+  .chat-app {
+    max-width: 800px;
+  }
+}

@@ -1,0 +1,54 @@
+.chat-app {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+  max-width: 800px;
+  margin: 5vh auto;
+  background-color: #343541;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+  .chat-app {
+    max-width: 100%; 
+  }
+
+  .message {
+    font-size: 0.9rem;
+    padding: 12px;
+    max-width: 90%; 
+  }
+
+  .chat-input-form {
+    padding: 10px;
+  }
+
+  .chat-input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .send-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    font-size: 0.85rem;
+    padding: 10px;
+    max-width: 95%; 
+  }
+
+  .send-button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,53 @@
+.chatbox {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #343541;
+}
+
+/* Message styling */
+.message {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 75%;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.user {
+  background-color: #10a37f;
+  margin-left: auto;
+  border-bottom-right-radius: 0px;
+}
+
+.bot {
+  background-color: #444654;
+  margin-right: auto;
+  border-bottom-left-radius: 0px;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #a0a0a0;
+  text-align: right;
+}
+
+.typing-indicator {
+  margin-left: auto;
+  font-style: italic;
+  color: #a0a0a0;
+}
+
+/* Responsive messages for smaller screens */
+@media (max-width: 768px) {
+  .message {
+    font-size: 0.9rem; /* Slightly smaller text on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    font-size: 0.85rem; /* Even smaller text on phones */
+  }
+}

@@ -1,0 +1,79 @@
+.chatbox {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #343541;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensures the chatbox uses the full width of its container */
+  max-width: 100%; /* Prevents the chatbox from exceeding the viewport width */
+  box-sizing: border-box; /* Includes padding in the total width calculation */
+}
+
+/* Message styling with flexible width to prevent overflow */
+.message {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 75%; /* Limits the message width to 75% of the chat window */
+  line-height: 1.5;
+  font-size: 1rem;
+  word-wrap: break-word; /* Ensures long words are broken properly */
+  overflow-wrap: break-word; /* Handles long words */
+  white-space: pre-wrap; /* Preserves whitespace and line breaks while wrapping */
+}
+
+.user {
+  background-color: #10a37f;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+}
+
+.bot {
+  background-color: #444654;
+  margin-right: auto;
+  border-bottom-left-radius: 0;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #a0a0a0;
+  text-align: right;
+}
+
+/* Responsive styles for screens below 942px */
+@media (max-width: 942px) {
+  .chatbox {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%; /* Ensures the chatbox does not exceed the screen width */
+  }
+  .message {
+    padding: 12px;
+    font-size: 0.9rem;
+    max-width: 90%; /* Adjust the message bubble width to fit smaller screens */
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .chatbox {
+    padding: 10px;
+  }
+  .message {
+    padding: 10px;
+    font-size: 0.85rem;
+    max-width: 90%; /* Allows more space for the chat bubbles on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbox {
+    padding: 10px;
+  }
+  .message {
+    padding: 10px;
+    font-size: 0.8rem;
+    max-width: 95%; /* Allows chat bubbles to stretch more for mobile phones */
+  }
+}

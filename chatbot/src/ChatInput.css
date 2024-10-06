@@ -1,0 +1,119 @@
+.chat-input-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 12px 15px;
+  background-color: #40414f;
+  border-top: 1px solid #565869;
+  flex-direction: row; 
+}
+
+.chat-input {
+  flex: 1;
+  width: 80%; 
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #555657;
+  color: white;
+  font-size: 0.85rem;
+  margin-bottom: 10px; 
+  transition: padding 0.3s ease, font-size 0.3s ease;
+}
+
+.chat-input::placeholder {
+  color: #a0a0a0;
+}
+
+.send-button {
+  display: inline-flex;  /* Use inline-flex to adjust size based on content */
+  align-items: center;   /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  padding: 10px 12px;  /* Adjust padding for a better look */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, padding 0.3s ease, font-size 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #0e8a6e;
+}
+
+@media (min-width: 250px) and (max-width: 350px) {
+  .chat-input-form {
+    flex-direction: row;
+    padding: 7px 11px;
+  }
+  .chat-input {
+    margin-bottom: 0;
+    width: 20px;
+  }
+  .send-button {
+    margin-left: 1px; /* Adds spacing between input and button */
+    width: auto;  /* Remove fixed width */
+    font-size: 0.7rem;  /* Adjust font size */
+  }
+}
+
+@media (min-width: 350px) and (max-width: 750px) {
+  .chat-input-form {
+    flex-direction: row;
+    padding: 10px 15px;
+  }
+  .chat-input {
+    margin-bottom: 0;
+    width: 25px;
+  }
+  .send-button {
+    margin-left: 2px; /* Adds spacing between input and button */
+    width: auto; /* Remove fixed width */
+  }
+}
+
+/* Responsive styles for tablets (min-width: 730px) */
+@media (min-width: 730px) {
+  .chat-input-form {
+    padding: 8px 17px;
+  }
+  .chat-input {
+    padding: 11px 13px;
+    font-size: 0.85rem;
+  }
+  .send-button {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 925px) {
+  .chat-input-form {
+    padding: 15px 20px;
+  }
+  .chat-input {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+  .send-button {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive styles for laptops and desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .chat-input-form {
+    padding: 20px 25px;
+  }
+  .chat-input {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+  .send-button {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+}
